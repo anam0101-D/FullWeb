@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Homepage</title>
+</head>
+<body>
+
+<style>
+body {
+  background-image: url(food.avif);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+}
+
+.text {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.container {
+  background: linear-gradient(120deg, skyblue, pink, yellowgreen);
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+button:hover {
+  border-bottom: 3px solid black;
+}
+
+.container img {
+  width: 50px;
+  height: 50px;
+}
+
+.container h1 {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+}
+
+.pic img{
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+  
+  .container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  button {
+    font-size: small;
+  }
+}
+
+  </style>
+
+  <div class="max">
+      <div class="container">
+        <img src="fast-food.png">
+        <h1>FoodHub</h1>
+        <button type="button" id="Home" value="button" onclick="b1()">Home</button>
+        <button type="button" id="Services" value="button" onclick="b2()">Services</button>
+        <button type="button" id="Contact Us" value="button" onclick="b3()">Contact Us</button>
+        <button type="button" id="About Us" value="button" onclick="b4()">About Us</button>
+      </div>
+  </div>
+
+  <div class="text">
+    <p>FooHub Services:</p>
+     <p>1.) Recipe Sharing: Connect with food enthusiasts by sharing your unique recipes. Upload photos and videos to showcase your culinary creations.</p>
+    <p>2.) Meal Prep Plans: Offer customizable meal prep plans tailored to various dietary needs (e.g., vegan, keto, gluten-free). Include shopping lists and cooking tips.</p>
+    <p>3.) Cooking Classes: Host virtual cooking classes where users can join live sessions or access recorded tutorials. Cover different cuisines, techniques, and skill levels.</p>
+    <p>4.) Ingredient Substitution Guide: Provide a comprehensive guide for ingredient substitutions to help users cook with what they have on hand.</p>
+    <p>5.) Food Blog & Articles: Write engaging articles about food trends, cooking tips, nutrition advice, and more to inspire and educate the community.</p>
+    <p>6.) Food Photography Tips: Offer workshops or resources on how to take stunning food photos for social media or personal blogs.</p>
+    <p>7.) Culinary Challenges: Organize monthly cooking challenges with themes, encouraging users to participate and share their results.</p>
+  </div>
+
+  <script>
+    function b1(){
+      window.location.href = 'home.html';
+    }
+  </script>
+
+  <script>
+    function b2(){
+      window.location.href = 'Services.html';
+    }
+  </script>
+
+  <script>
+    function b3(){
+      window.location.href = 'contactme.html';
+    }
+  </script>
+
+  <script>
+    function b4(){
+      window.location.href = 'About.html';
+    }
+  </script>
+
+</body>
+</html>

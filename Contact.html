@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Homepage</title>
+</head>
+<body>
+
+<style>
+body {
+  background-image: url(food.avif);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+}
+
+.text {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background: linear-gradient(120deg, skyblue, pink, yellowgreen);
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap; 
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+button:hover {
+  border-bottom: 3px solid black;
+}
+
+.container img {
+  width: 50px;
+  height: 50px;
+}
+
+.container h1 {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+}
+
+.pic img{
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  *{
+    letter-spacing: 1px;
+  }
+
+  p{
+    font-size: 20px;
+    margin-top: 1px;
+  }
+  
+  .container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+  .container h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pic img{
+    width: 60px;
+    height: 60px;
+  }
+
+  button {
+    font-size: small;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+  }
+  
+  .container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  button {
+    font-size: small;
+  }
+}
+
+  </style>
+
+  <div class="max">
+      <div class="container">
+        <img src="fast-food.png">
+        <h1>FoodHub</h1>
+        <button type="button" id="Home" value="button" onclick="b1()">Home</button>
+        <button type="button" id="Services" value="button" onclick="b2()">Services</button>
+        <button type="button" id="Contact Us" value="button" onclick="b3()">Contact Us</button>
+        <button type="button" id="About Us" value="button" onclick="b4()">About Us</button>
+      </div>
+  </div>
+
+  <div class="text">
+
+    <p>Contact Us</p><br>
+    <p>Email: support@foodhub.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Foodie Lane, Flavor Town, FT 45678</p><br>
+    <p>Social Media:</p><br>
+    <p>Instagram: @FoodHub</p>
+    <p>Facebook: facebook.com/FoodHub</p>
+    <p>Twitter: @FoodHub</p>
+    <p>For inquiries, feedback, or collaboration opportunities, feel free to reach out!</p>
+    
+  </div>
+
+  <script>
+    function b1(){
+      window.location.href = 'home.html';
+    }
+  </script>
+
+  <script>
+    function b2(){
+      window.location.href = 'Services.html';
+    }
+  </script>
+
+  <script>
+    function b3(){
+      window.location.href = 'Contact.html';
+    }
+  </script>
+
+  <script>
+    function b4(){
+      window.location.href = 'About.html';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+  background-image: linear-gradient(to left, rgb(149, 214, 240), rgb(248, 175, 175), pink);
+}
+
+.application{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img{
+  width: 95px;
+  height: 95px;
+  top: 20rem;
+}
+
+button{
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:rgb(5, 134, 203);
+  border: 1px solid black;
+}
+
+

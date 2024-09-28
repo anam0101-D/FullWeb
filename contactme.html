@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1stProj.css">
+  <title>My 1st Project</title>
+</head>
+<body>
+  <div class="Title">Contact Me</div>
+  <div class="Container">
+    <form>
+        <div class="group">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" id="text1" required>
+        </div>
+        <div class="group">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email" id="text2" required>
+        </div>
+        <div class="group">
+          <label for="message">Message</label>
+          <input type="text" placeholder="Message" id="text3" required>
+        </div>
+
+        <script>function displaymessage(){
+          alert("Submit Successfuly.");
+            }
+        </script>
+
+        <button type="button" id="Submit" onclick="displaymessage() ">Submit</button>
+    </form>
+
+  </div>
+  <div class="music">
+    <br><audio src="7 Years - Lukas Graham  [Lyrics_Vietsub].mp3" controls></audio>
+  </div>
+
+    <div class="ans">
+      <p class="output" id="otp1"></p>
+      <p class="output" id="otp2"></p>
+      <p class="output" id="otp3"></p>
+    </div>
+
+    <script>
+      const txt1 = document.getElementById('text1');
+      const btn1 = document.getElementById('Submit');
+      const outp1 = document.getElementById('otp1');
+
+      function fun1() {
+        outp1.innerHTML = txt1.value;
+      } 
+      
+      btn1.addEventListener('click',fun1);
+
+      const txt2 = document.getElementById('text2');
+      const btn2 = document.getElementById('Submit');
+      const outp2 = document.getElementById('otp2');
+      function fun2() {
+        outp2.innerHTML = txt2.value;
+      } 
+      btn1.addEventListener('click',fun2);
+
+      const txt3 = document.getElementById('text3');
+      const btn3 = document.getElementById('Submit');
+      const outp3 = document.getElementById('otp3');
+      function fun3() {
+        outp3.innerHTML = txt3.value;
+      } 
+      btn1.addEventListener('click',fun3);
+    </script>
+</body>
+</html>
